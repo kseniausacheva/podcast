@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast 360 | Студия звукозаписи и видеопродакшна</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                black: '#0a0a0a',
+                dark: '#121212',
+                blue: '#0044cc', // Deep blue base
+                metallic: '#2563eb', // Lighter metallic blue
+                cyan: '#06b6d4', // Accent cyan
+              }
+            },
+            backgroundImage: {
+              'metallic-gradient': 'linear-gradient(135deg, #0044cc 0%, #06b6d4 100%)',
+              'metallic-text': 'linear-gradient(to right, #60a5fa, #22d3ee)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2563eb;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-black text-white antialiased selection:bg-brand-cyan selection:text-black">
+    <div id="root"></div>
+  </body>
+</html>
